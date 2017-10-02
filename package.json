@@ -1,0 +1,54 @@
+{
+  "name": "foam",
+  "version": "0.0.1",
+  "description": "Data structure driven forms",
+  "entry": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/webpack-dev-server --watch-stdin --colors",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack -p --config webpack.config.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/ --require babel-register --require ignore-styles --recursive",
+    "test:watch": "NODE_ENV=test ./node_modules/.bin/mocha test/ --require babel-register --require ignore-styles --recursive --watch"
+  },
+  "engines": {
+    "node": ">=4.5.0",
+    "npm": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MainShayne233/foam.git"
+  },
+  "author": "MainShayne233",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.0.0",
+    "jsdom": "^11.3.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^3.5.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-hot-loader": "^1.3.1",
+    "react-json-view": "^1.13.0",
+    "react-test-renderer": "^16.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "write-file-webpack-plugin": "^4.2.0"
+  }
+}

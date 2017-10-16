@@ -8,10 +8,10 @@ const env = process.env.NODE_ENV || 'development'
 const prod = env === 'production'
 
 const devEntries = [
-  'react-hot-loader/patch',
   `webpack-dev-server/client?http://localhost:${port}`,
   'webpack/hot/only-dev-server',
-   path.join(__dirname, 'demo', 'main.js'),
+  'react-hot-loader/patch',
+   path.join(__dirname, 'demo', 'index.js'),
 ]
 
 const prodEntry = './src/index.js'
